@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+</head>
+<body>
+
+<h2>Job Application Form</h2>
+
+<div class="container">
+    <form id="applicationForm">
+        <h3>Personal Information</h3>
+        <div class="row">
+            <div class="col-25">
+                <label for="firstName">First Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lastName">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-25">
+                <label for="phone">Phone Number</label>
+            </div>
+            <div class="col-75">
+                <input type="tel" id="phone" name="phone" placeholder="e.g., (123) 456-7890" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email Address</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="street">Street</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="street" name="street" placeholder="Street Address" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="city">City</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="city" name="city" placeholder="City" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="state">State</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="state" name="state" placeholder="State" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="zipCode">ZIP Code</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="zipCode" name="zipCode" placeholder="ZIP Code" required>
+            </div>
+        </div>
+        
+        
+        <h3>Resume and Cover Letter</h3>
+        <div class="row">
+            <div class="col-25">
+                <label for="resume">Upload Resume</label>
+            </div>
+            <div class="col-75">
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="coverLetter">Cover Letter</label>
+            </div>
+            <div class="col-75">
+                <textarea id="coverLetter" name="coverLetter" placeholder="Write your cover letter..." required></textarea>
+            </div>
+        </div>
+
+        <h3>Education</h3>
+        <div class="row">
+            <div class="col-25">
+                <label for="education">Highest Level of Education</label>
+            </div>
+            <div class="col-75">
+                <select id="education" name="education" required>
+                    <option value="highschool">High School</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="phd">PhD</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="school">School/University Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="school" name="school" placeholder="Name of School/University" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="major">Major/Area of Study</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="major" name="major" placeholder="Your Major" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="gradYear">Graduation Year</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="gradYear" name="gradYear" placeholder="e.g., 2024" required>
+            </div>
+        </div>
+
+        <h3>Employment History</h3>
+        <div class="row">
+            <div class="col-25">
+                <label for="jobTitle">Previous Job Title</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Your Previous Job Title" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="company">Company Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="company" name="company" placeholder="Company Name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="employmentFrom">Employment Start Date</label>
+            </div>
+            <div class="col-75">
+                <input type="date" id="employmentFrom" name="employmentFrom" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="employmentTo">Employment End Date</label>
+            </div>
+            <div class="col-75">
+                <input type="date" id="employmentTo" name="employmentTo" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="responsibilities">Job Responsibilities</label>
+            </div>
+            <div class="col-75">
+                <textarea id="responsibilities" name="responsibilities" placeholder="Your Responsibilities..." required></textarea>
+            </div>
+        </div>
+
+        <h3>Skills and Certifications</h3>
+        <div class="row">
+            <div class="col-25">
+                <label for="skills">Relevant Skills</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="skills" name="skills" placeholder="e.g., Programming Languages, Software" required>
+            </div>
+        </div>
+
+        <h3>Availability</h3>
+        <div class="row">
+            <div class="col-25">
+                <label for="startDate">Start Date</label>
+            </div>
+            <div class="col-75">
+                <input type="date" id="startDate" name="startDate" placeholder="e.g., Immediately" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="relocate">Willingness to Relocate</label>
+            </div>
+            <div class="col-75">
+                <select id="relocate" name="relocate" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="schedule">Preferred Work Schedule</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="schedule" name="schedule" placeholder="e.g., Full-Time, Part-Time" required>
+            </div>
+        </div>
+
+        <h3>References</h3>
+        <div class="row">
+            <div class="col-25">
+                <label for="refName">Reference Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="refName" name="refName" placeholder="Reference Name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="refPhone">Reference Phone</label>
+            </div>
+            <div class="col-75">
+                <input type="tel" id="refPhone" name="refPhone" placeholder="Reference Phone Number" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="relationship">Relationship to Applicant</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="relationship" name="relationship" placeholder="Relationship to Applicant" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="additionalQuestions">Why do you want to work for this company?</label>
+            </div>
+            <div class="col-75">
+                <textarea id="additionalQuestions" name="additionalQuestions" placeholder="Your answer here..." required></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>
+                    <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                    I agree to the terms and conditions.
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    I acknowledge the privacy policy.
+                </label>
+            </div>
+        </div>
+        
+        <input type="submit" value="Submit Application">
+        
+    </form>
+    
+    <div class="button-container">
+        <button type="button" class="button" id="viewApplicationsButton">View Applications as Table</button>
+    </div>
+    
+
+</div>
+
+<div class="table-container" id="tableContainer">
+    <table id="applicationTable" style="display:none;">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Education</th>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Start Date</th>
+                <th>Relocate</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+
+<script src="scripts.js"></script>
+ 
+
+
+</body>
+</html>
